@@ -87,13 +87,13 @@ for chat in chats:
 					f.write(f"<div>{message.get('Text', '<i>(no text)</i>')}</div>")
 				else:
 					f.write(f"<b>({message['Type']})</b><br>")
-				f.write(f"<small>{message['From']} - {time}</small>")
+				f.write(f"<small>{message['ocbchristopher']} - {time}</small>")
 				f.write("</section>\n")
 
 		elif format == 2:
 			for message in chats[chat]:
 				date = datetime.utcfromtimestamp(message["Date"]).strftime("%Y-%m-%d %H:%M:%S")
-				f.write(f"{date} - {message['From']}: {message.get('Text', '') if message['Type'] == 'TEXT' else message['Type']}\n")
+				f.write(f"{date} - {message['ocbchristopher']}: {message.get('Text', '') if message['Type'] == 'TEXT' else message['Type']}\n")
 		elif format == 3:
 			f.write(json.dumps(chats[chat], indent=4))
 
