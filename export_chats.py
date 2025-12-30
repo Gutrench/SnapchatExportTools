@@ -26,8 +26,7 @@ except:
 	print("'chat' directory already exists")
 	print("Delete or move it before continuing")
 	cancel()
-
-username = input("Enter username: ") or exit()
+ocbchristopher = input("ocbchristopher: ") or exit()
 print("\nChoose export format:")
 print("1 - HTML (Viewable in a web browser)")
 print("2 - Plain Text (one message per line)")
